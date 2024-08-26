@@ -49,15 +49,116 @@ main {
     justify-content: center;
 }
 
+/* input-container styles */
 .input-container {
     /* background-color: var(--White-color); */
     flex: 1 1 50%;
     padding: 2rem;
 }
 
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.title-p {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.reset-p {
+    border-bottom: 1px dotted var(--Slate-500);
+    font-size: 1.2rem;
+}
+label {
+    /* border: 1px solid green; */
+    margin: 1rem 0;
+    font-size: 1.2rem;
+}
+
+.container {
+    margin: 1rem 0;
+}
+
+.amount-container {
+    display: flex;
+    border: 1px solid red;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--Slate-100);
+    margin-top: 0.5rem;
+}
+
+.amount-input {
+    width: 90%;
+}
+
+.number-label {
+    width: 10%;
+    background-color: var(--Slate-100);
+    height: 100%;
+}
+
+.number-label p {
+    width: 10%;
+    text-align: center;
+    padding-left: 1rem;
+}
+
+.terms-container {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.term {
+    background-color: var(--Slate-100);
+    display: flex;
+    align-items: center;
+    margin-top: 0.5rem;
+}
+
+.term input {
+    width: 80%;
+}
+
+.term p {
+    text-align: center;
+    width: 30%;
+}
+
+.radio-buttons-container {
+    width: 100%;
+    /* border: 1px solid blue; */
+}
+.radio-item {
+    display: flex;
+    width: 100%;
+    gap: 2rem;
+    border: 1px solid var(--Lime-color);
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+}
+
+.radio-item  p{
+ width: 100%;
+}
+
+button {
+    outline: none;
+    border: none;
+    background-color: var(--Lime-color);
+    border-radius: 1.6rem;
+    padding: 0.5rem;
+}
+/* results styles */
 .results-container {
     background-color: var(--Slate-900);
     border-radius: 0px 1rem 1rem 3rem;
     flex: 1 1 50%;
     padding: 2rem;
 }
+
