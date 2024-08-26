@@ -1,0 +1,63 @@
+/* global styles reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    /* primary colors */
+    --Lime-color: hsl(61, 70%, 52%);
+    --error-color: hsl(4, 69%, 50%);
+
+    /* neutral colors */
+    --White-color: hsl(0, 0%, 100%);
+    --Slate-100: hsl(202, 86%, 94%);
+    --Slate-300: hsl(203, 41%, 72%);
+    --Slate-500: hsl(200, 26%, 54%);
+    --Slate-700: hsl(200, 24%, 40%);
+    --Slate-900: hsl(202, 55%, 16%);
+}
+
+@font-face {
+    font-family: main-font;
+    src: url("./assets/fonts/PlusJakartaSans-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: error-font;
+    src: url("./assets/fonts/PlusJakartaSans-Italic-VariableFont_wght.ttf");
+}
+
+/* body styles */
+body {
+    background-color: var(--Slate-300);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* main section styles */
+main {
+    border-radius: 1rem;
+    width: 640px;
+    display: flex;
+    background-color: var(--White-color);
+    justify-content: center;
+}
+
+.input-container {
+    /* background-color: var(--White-color); */
+    flex: 1 1 50%;
+    padding: 2rem;
+}
+
+.results-container {
+    background-color: var(--Slate-900);
+    border-radius: 0px 1rem 1rem 3rem;
+    flex: 1 1 50%;
+    padding: 2rem;
+}
