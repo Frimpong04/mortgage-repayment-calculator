@@ -157,8 +157,53 @@ button {
 /* results styles */
 .results-container {
     background-color: var(--Slate-900);
-    border-radius: 0px 1rem 1rem 3rem;
+    border-radius: 0px 1rem 1rem 5rem;
     flex: 1 1 50%;
     padding: 2rem;
 }
 
+.result-title {
+    color: var(--White-color);
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+.results-subtitle {
+    color: var(--Slate-100);
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    line-height: 1.4;
+}
+
+.payment-container {
+    background-color: rgb(1, 1, 29);
+    border-radius: 0.5rem;
+    border-top: 3px solid var(--Lime-color);
+    padding: 2rem;
+    margin-bottom: 2.5rem;
+}
+
+.payment-title {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    color: var(--White-color);
+}
+
+.monthly-repayment {
+    font-size: 2.8rem;
+    color: var(--Lime-color);
+    margin-bottom: 1rem;
+   
+}
+
+
+.total-title {
+    color: var(--White-color);
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+
+.grand-total {
+    color: var(--White-color);
+    font-size: 1.4rem;
+}
