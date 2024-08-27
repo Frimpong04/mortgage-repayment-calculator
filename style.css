@@ -91,9 +91,38 @@ label {
     margin-top: 0.5rem;
 }
 
+/* input[type="number"] {
+    appearance: none;
+    outline: none;
+    border: none;
+} */
+
+.amount-container,
+.term {
+    border: 1px solid var(--Slate-500);
+    border-radius: 0.5rem;
+}
+
+input[type="number"] {
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+    appearance: textfield;
+    outline: none;
+    border: none;
+    padding: 0.5rem;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+}
+
+
 .amount-input {
     width: 90%;
+    border-radius: 0 0.5rem 0.5rem 0;
 }
+
 
 .number-label {
     width: 10%;
@@ -122,6 +151,7 @@ label {
 
 .term input {
     width: 80%;
+    border-radius: 0.5rem 0 0 0.5rem;
 }
 
 .term p {
@@ -151,8 +181,18 @@ button {
     outline: none;
     border: none;
     background-color: var(--Lime-color);
-    border-radius: 1.6rem;
-    padding: 0.5rem;
+    border-radius: 2rem;
+    padding: 1rem;
+    margin: 2.5rem 0;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+button img {
+    width: 1.1rem;
+    height: 1.4rem;
 }
 /* results styles */
 .results-container {
@@ -171,7 +211,7 @@ button {
 .results-subtitle {
     color: var(--Slate-100);
     font-size: 1.2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     line-height: 1.4;
 }
 
@@ -184,13 +224,13 @@ button {
 }
 
 .payment-title {
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
     font-size: 1.2rem;
     color: var(--White-color);
 }
 
 .monthly-repayment {
-    font-size: 2.8rem;
+    font-size: 3rem;
     color: var(--Lime-color);
     margin-bottom: 1rem;
    
@@ -200,7 +240,7 @@ button {
 .total-title {
     color: var(--White-color);
     font-size: 1.2rem;
-    margin: 1rem 0;
+    margin: 2rem 0 0.5rem;
 }
 
 .grand-total {
