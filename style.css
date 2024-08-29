@@ -283,4 +283,20 @@ button img {
         width: 100%;
     }
 
+
+}
+
+@media screen and (max-width: 400px) {
+    main {
+        width: 100%;
+        border-radius: 0px;
+    }
+
+    .results-container {
+        border-radius: 0px;
+    }
+
+    button {
+        margin: 2.5rem auto;
+    }
 }
