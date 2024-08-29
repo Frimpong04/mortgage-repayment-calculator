@@ -247,3 +247,15 @@ button img {
     color: var(--White-color);
     font-size: 1.4rem;
 }
+
+@media screen and (max-width: 700px) {
+    main {
+        flex-direction: column;
+        width: 55%;
+        border-radius: 0px 0rem 1rem 5rem;
+    }
+
+    .results-container {
+        border-radius: 0px 0rem 1rem 5rem;
+    }
+}
