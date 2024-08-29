@@ -259,3 +259,28 @@ button img {
         border-radius: 0px 0rem 1rem 5rem;
     }
 }
+
+@media  screen and (max-width: 500px) {
+    main {
+        width: 60%;
+    }
+
+    .title {
+        flex-direction: column;
+        align-items: start;
+        gap: 1rem;
+    }
+
+    .terms-container {
+        flex-direction: column;
+        gap: 0.5rem;
+        /* border: 1px solid red; */
+    }
+
+    .mortgage-term-container,
+    .mortgage-rate-container {
+        /* border: 1px solid green; */
+        width: 100%;
+    }
+
+}
