@@ -200,6 +200,7 @@ button img {
     border-radius: 0px 1rem 1rem 5rem;
     flex: 1 1 50%;
     padding: 2rem;
+    display: none;
 }
 
 .result-title {
@@ -246,6 +247,36 @@ button img {
 .grand-total {
     color: var(--White-color);
     font-size: 1.4rem;
+}
+
+/* empty results styles */
+.empty-results-container {
+    background-color: var(--Slate-900);
+    border-radius: 0px 1rem 1rem 5rem;
+    flex: 1 1 50%;
+    padding: 2rem;
+    color: var(--White-color);
+}
+
+.empty-results-container img {
+    margin: 2.5rem 7rem 1rem ;
+    width: 15rem;
+    /* border: 1px solid yellow; */
+   display: inline-block;
+
+}
+
+.empty-results-container h2 {
+    text-align: center;
+    margin-bottom: 0.5rem;
+    font-size: 1.8rem;
+}
+
+.empty-results-container p {
+    text-align: center;
+    font-size: 1.2rem;
+    /* padding: 0 2rem; */
+    line-height: 1.4;
 }
 
 @media screen and (max-width: 700px) {
