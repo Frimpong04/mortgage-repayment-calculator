@@ -23,24 +23,24 @@
                         <p>£</p>
                     </div>
                     
-                    <input type="number"  class="amount-input"/>
+                    <input type="number"  class="amount-input" id="input-amount" name="amount-input"/>
                 </div>
                 
 
                 <div class="terms-container container">
                     <div class="mortgage-term-container ">
                         <label>Mortgage Term</label>
-                        <div class="term-container term">
-                            <input type="number"/>
+                        <div class="term-container term same-thing">
+                            <input type="number" class="term-input" id="term-input" name="term-input"/>
                             <p class="years">years</p>
                         </div>
                        
                     </div>
                     
-                    <div class="mortgage-rate-container container">
+                    <div class="mortgage-rate-container container same-thing">
                         <label>Mortgage Rate</label>
                         <div class="rate-container term">
-                            <input type="number"/>
+                            <input type="number" class="rate-input" id="rate-input" name="rate-input"/>
                             <p class="rate">%</p>
                         </div>
                         
@@ -51,7 +51,7 @@
                 <div class="radio-buttons-container container">
                     <label>Mortgage Type</label>
                     <div class="repayment-radio-container radio-item">
-                        <input type="radio" name="mortgage-type" value="Repayment" id="repayment"/>
+                        <input type="radio" name="mortgage-type" value="Repayment" id="repayment" />
                         <p class="repayment-text">Repayment</p>
                     </div>
                    

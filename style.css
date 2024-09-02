@@ -87,6 +87,10 @@ main {
     color: var(--Slate-300);
 }
 
+.reset-p:hover {
+    cursor: pointer;
+}
+
 label {
     /* border: 1px solid green; */
     margin: 1rem 0;
@@ -108,11 +112,12 @@ label {
     color: var(--Slate-900);
 }
 
-/* input[type="number"] {
-    appearance: none;
-    outline: none;
-    border: none;
-} */
+.amount-container.clicked,
+.term-container.clicked,
+.rate-container.clicked {
+    background-color: var(--Lime-color);
+    border: 1px solid var(--Lime-color);
+}
 
 .amount-container,
 .term {
@@ -144,7 +149,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 .number-label {
     width: 10%;
-    background-color: var(--Slate-100);
+    background-color: transparent;
     height: 100%;
    
 }
@@ -197,8 +202,16 @@ input[type=number]::-webkit-outer-spin-button {
 
 .radio-item  p{
     width: 100%;
+    font-size: 1.2rem;
     color: var(--Slate-900);
 }
+
+.repayment-radio-container.selected,
+.interest-icon-container.selected {
+    background-color: var(--Lime-color);
+    border: 1px solid var(--Lime-color);
+}
+
 
 button {
     outline: none;
