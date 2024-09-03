@@ -17,7 +17,7 @@
                     <p class="reset-p">Clear All</p>
                 </div>
 
-                <label>Mortagage Amount</label>
+                <label class="label"> Mortagage Amount</label>
                 <div class="amount-container container">
 
                     <div class="number-label">
@@ -30,7 +30,7 @@
 
                 <div class="terms-container container">
                     <div class="mortgage-term-container ">
-                        <label>Mortgage Term</label>
+                        <label class="label">Mortgage Term</label>
                         <div class="term-container term same-thing">
                             <input type="number" class="term-input" id="term-input" name="term-input"/>
                             <p class="years">years</p>
@@ -39,7 +39,7 @@
                     </div>
                     
                     <div class="mortgage-rate-container container same-thing">
-                        <label>Mortgage Rate</label>
+                        <label class="label">Mortgage Rate</label>
                         <div class="rate-container term">
                             <input type="number" class="rate-input" id="rate-input" name="rate-input"/>
                             <p class="rate">%</p>
@@ -50,14 +50,22 @@
                 </div>
                 
                 <div class="radio-buttons-container container">
-                    <label>Mortgage Type</label>
+                    <label class="label">Mortgage Type</label>
                     <div class="repayment-radio-container radio-item">
-                        <input type="radio" name="mortgage-type" value="repayment" id="repayment" />
+                        <label class="radio-container">
+                            <input type="radio" name="mortgage-type" value="repayment" id="repayment" />
+                            <span class="checkmark"></span>
+                        </label>
+                        
                         <p class="repayment-text">Repayment</p>
                     </div>
                    
                     <div class="interest-icon-container radio-item">
-                        <input type="radio" name="mortgage-type" value="interest" id="interest"/>
+                        <label class="radio-container">
+                            <input type="radio" name="mortgage-type" value="interest" id="interest"/>
+                            <span class="checkmark"></span>
+                        </label>
+                       
                         <p class="interest-text">Interests</p>
                     </div>
                   

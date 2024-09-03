@@ -91,7 +91,7 @@ main {
     cursor: pointer;
 }
 
-label {
+.label {
     /* border: 1px solid green; */
     margin: 1rem 0;
     font-size: 1.2rem;
@@ -219,6 +219,60 @@ input[type=number]::-webkit-outer-spin-button {
     border: 1px solid var(--Lime-color);
 }
 
+/* custome radio styles */
+.radio-container {
+    position: relative;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin:0 1rem 2rem 0;
+}
+
+.radio-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: var(--Slate-100);
+}
+
+
+.repayment-radio-container:hover .radio-container input ~.checkmark,
+.interest-icon-container:hover .radio-container input ~.checkmark {
+    background-color: var(--Slate-700);
+}
+
+.radio-container input:checked ~ .checkmark {
+  background-color: var(--Slate-700);
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.radio-container input:checked ~ .checkmark:after {
+    display: block;
+    top: 6px;
+    left: 6px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: var(--Lime-color);
+
+}
+
 
 button {
     outline: none;
@@ -263,6 +317,10 @@ button img {
     background-color: var(--error-color);
     border: 1px solid var(--error-color);
 }
+
+/* radio styles */
+
+  
 
 /* results styles */
 .results-container {

@@ -40,6 +40,11 @@ clearAllEl.addEventListener("click", () => {
     amountContainerEl.classList.remove("clicked");
     termContainerEl.classList.remove("clicked");
     rateContainerEl.classList.remove("clicked");
+    repaymentRadioEL.checked = false;
+    interesetRadioEl.checked = false;
+    repaymentRadioContainerEl.classList.remove("selected");
+    interestContainerEl.classList.remove("selected");
+
 });
 
 amountInputEl.addEventListener("focus", () => {
