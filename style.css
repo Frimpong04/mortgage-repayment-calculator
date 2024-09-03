@@ -99,7 +99,7 @@ label {
 }
 
 .container {
-    margin: 1rem 0;
+    margin: 0.5rem 0;
 }
 
 .amount-container {
@@ -118,6 +118,7 @@ label {
     background-color: var(--Lime-color);
     border: 1px solid var(--Lime-color);
 }
+
 
 .amount-container,
 .term {
@@ -171,7 +172,7 @@ input[type=number]::-webkit-outer-spin-button {
     background-color: var(--Slate-100);
     display: flex;
     align-items: center;
-    margin-top: 0.5rem;
+    margin: 0.5rem 0;
 }
 
 .term input {
@@ -195,7 +196,7 @@ input[type=number]::-webkit-outer-spin-button {
     width: 100%;
     gap: 2rem;
     border: 1px solid var(--Lime-color);
-    margin: 1rem 0;
+    margin: 0.5rem 0;
     border-radius: 0.5rem;
     padding: 0.5rem;
 }
@@ -204,6 +205,12 @@ input[type=number]::-webkit-outer-spin-button {
     width: 100%;
     font-size: 1.2rem;
     color: var(--Slate-900);
+}
+
+.repayment-radio-container:hover,
+.interest-icon-container:hover {
+    cursor: pointer;
+    box-shadow: 3px 3px 12px var(--Slate-100);
 }
 
 .repayment-radio-container.selected,
@@ -227,10 +234,36 @@ button {
     color: var(--Slate-900);
 }
 
+button:hover {
+    cursor: pointer;
+    box-shadow: 3px 3px 12px var(--Slate-100);
+}
+
 button img {
     width: 1.1rem;
     height: 1.4rem;
 }
+
+/* error state */
+/* .error {
+    color: var(--error-color);
+} */
+
+.input-amount-error,
+.rate-input-error,
+.term-input-error,
+.radio-input-error {
+    color: var(--error-color);
+    display: none;
+}
+
+.amount-container.error-state,
+.term-container.error-state,
+.rate-container.error-state {
+    background-color: var(--error-color);
+    border: 1px solid var(--error-color);
+}
+
 /* results styles */
 .results-container {
     background-color: var(--Slate-900);

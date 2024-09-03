@@ -19,13 +19,14 @@
 
                 <label>Mortagage Amount</label>
                 <div class="amount-container container">
+
                     <div class="number-label">
                         <p>£</p>
                     </div>
                     
                     <input type="number"  class="amount-input" id="input-amount" name="amount-input"/>
                 </div>
-                
+                <p class="error input-amount-error">This field is required</p>
 
                 <div class="terms-container container">
                     <div class="mortgage-term-container ">
@@ -34,7 +35,7 @@
                             <input type="number" class="term-input" id="term-input" name="term-input"/>
                             <p class="years">years</p>
                         </div>
-                       
+                       <p class="error term-input-error">This field is required</p>
                     </div>
                     
                     <div class="mortgage-rate-container container same-thing">
@@ -43,7 +44,7 @@
                             <input type="number" class="rate-input" id="rate-input" name="rate-input"/>
                             <p class="rate">%</p>
                         </div>
-                        
+                        <p class="error rate-input-error">This field is required</p>
                     </div>
 
                 </div>
@@ -51,16 +52,17 @@
                 <div class="radio-buttons-container container">
                     <label>Mortgage Type</label>
                     <div class="repayment-radio-container radio-item">
-                        <input type="radio" name="mortgage-type" value="Repayment" id="repayment" />
+                        <input type="radio" name="mortgage-type" value="repayment" id="repayment" />
                         <p class="repayment-text">Repayment</p>
                     </div>
                    
                     <div class="interest-icon-container radio-item">
-                        <input type="radio" name="mortgage-type" value="Interest Only" id="interest"/>
+                        <input type="radio" name="mortgage-type" value="interest" id="interest"/>
                         <p class="interest-text">Interests</p>
                     </div>
                   
                 </div>
+                <p class="error radio-input-error">This field is required</p>
 
                 <button type="submit" ><img src="./assets/images/icon-calculator.svg"/><span class="calc-repayment">Calculate Repayment</span></button>
             </form>
